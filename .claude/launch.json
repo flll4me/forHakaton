@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "demo-dashboard",
+      "runtimeExecutable": "powershell",
+      "runtimeArgs": ["-NoProfile", "-Command", "$env:DEMO='1'; $env:FEEDBACK_DB='data/processed/feedback_demo.sqlite'; $env:OPENBLAS_NUM_THREADS='1'; $env:HF_HUB_OFFLINE='1'; .venv\\Scripts\\python.exe -m streamlit run dashboard/app.py --server.headless true --server.port 8501"],
+      "port": 8501
+    }
+  ]
+}

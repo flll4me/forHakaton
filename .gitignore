@@ -1,0 +1,34 @@
+# Данные кейса нельзя публиковать
+data/raw/
+data/processed/
+!data/.gitkeep
+*.jsonl
+*.jsonl.gz
+# демо-обращения написаны вручную (не данные кейса) — их можно публиковать
+!demo/demo_tickets.jsonl
+*.tgz
+*.docx
+
+# Модели и индексы (воспроизводятся make train)
+models/*
+!models/.gitkeep
+
+# Feedback БД может содержать тексты обращений
+*.sqlite
+*.db
+
+# Секреты
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+pip_install.log
+
+# Отчёты с примерами реальных текстов
+reports/control_set*.jsonl
+reports/evaluation_examples.md
+*.exe
+reports/predictions*

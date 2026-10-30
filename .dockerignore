@@ -1,0 +1,10 @@
+.venv
+data
+models
+reports/evaluation_examples.md
+*.tgz
+*.docx
+*.exe
+.env
+__pycache__
+.pytest_cache
